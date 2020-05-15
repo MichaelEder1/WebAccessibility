@@ -16,6 +16,10 @@ a {
     color: #006ADB !important;
 }
 
+ul{
+    list-style-type: "- " !important;
+}
+
 
 .hide {
     display: block;
