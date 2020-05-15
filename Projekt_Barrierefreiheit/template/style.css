@@ -1,0 +1,17 @@
+.nav-link {
+    color: white !important;
+}
+
+.active a {
+    color: #FFEB0F !important;
+    font-weight: bold !important;
+}
+
+header, #submit {
+    background-color: #006ADB;
+    color: white;
+}
+
+a {
+    color: #006ADB !important;
+}

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Struktur Übung</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+<div class="content">
+    <h1>Erweiterte Suche</h1>
+
+    <form action="#" method="post">
+        <label for="searchField">Suchbegriff</label> <input type="search" id="searchField">
+
+        <fieldset>
+            <legend>Dokumentenart</legend>
+            <input type="checkbox" id="pdf"> <label for="pdf">PDF</label> <br>
+            <input type="checkbox" id="rtf"><label for="rtf">RTF</label> <br>
+            <input type="checkbox" id="html"> <label for="html">HTML</label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Suchraum</legend>
+            <input type="radio" name="search_r" id="sr1"><label for="sr1">Alle Bereiche</label><br>
+            <input type="radio" name="search_r" id="sr2"><label for="sr2">Ein Bereich</label>
+        </fieldset>
+
+        <label><abbr class="error" title="Fehler: Falsche eingabe" aria-hidden="true">!</abbr>
+            <span class="hide">Falsche Eingabe: Datum (TT.MM.JJJJ)</span>Datum (TT.MM.JJJJ)</label>
+        <input type="date" required aria-required="true">
+
+    </form>
+
+</div>
+</body>
+</html>

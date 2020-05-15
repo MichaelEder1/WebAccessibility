@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Button example</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function ()
+        {
+
+            var pushButton = document.getElementById("pushButton");
+            pushButton.addEventListener("click", function ()
+            {
+                pushButtonTriggerAction();
+            });
+            pushButton.addEventListener("click", function (event)
+            {
+                if (event.key === "Enter" || event.key === " ")
+                {
+                    pushButtonTriggerAction();
+                }
+            });
+
+            var toggleButton = document.getElementById("toggleButton");
+            toggleButton.addEventListener("click", function ()
+            {
+                toggleButtonTriggerAction(toggleButton);
+            });
+            toggleButton.addEventListener("keydown", function (event)
+            {
+                if (event.key === "Enter" || event.key === " ")
+                {
+                    toggleButtonTriggerAction();
+                }
+            });
+
+        });
+
+
+        function pushButtonTriggerAction()
+        {
+
+            alert("Hello!");
+        }
+
+        function toggleButtonTriggerAction(toggleButton)
+        {
+
+            if (toggleButton.classList.contains("button_pressed"))
+            {
+                toggleButton.classList.remove("button_pressed");
+                toggleButton.setAttribute("aria-pressed", "false");
+            }
+            else
+            {
+                toggleButton.classList.add("button_pressed");
+                toggleButton.classList.add("button-pressed")
+                toggleButton.setAttribute("aria-pressed", "true");
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+<h1>Push Button</h1>
+
+<span class="button" id="pushButton" tabindex="0" role="button">Drück mich!</span>
+
+<h1>Toggle Button</h1>
+
+
+<span class="button" id="toggleButton" tabindex="0" role="button" aria-pressed="false" aria-label="Fett">f</span>
+
+</body>
+</html>

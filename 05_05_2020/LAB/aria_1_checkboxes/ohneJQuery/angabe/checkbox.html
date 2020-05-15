@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aria Checkbox Example</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function ()
+        {
+            initCheckboxes();
+        });
+
+        function initCheckboxes()
+        {
+            var checkBoxes = document.getElementsByClassName("checkbox");
+            for (var i = 0; i < checkBoxes.length; i++)
+            {
+                checkBoxes[i].addEventListener("click", toggleCheckbox);
+                checkBoxes[i].addEventListener("keydown", function (event)
+                {
+                    if (event.key === "Enter" || event.key === " ")
+                    {
+                        toggleCheckbox(event);
+                    }
+                })
+            }
+        }
+
+
+        function toggleCheckbox(event)
+        {
+            var checkbox = event.currentTarget;
+            var images = checkbox.getElementsByTagName("img");
+            if (checkbox.classList.contains("checked"))
+            {
+
+                checkbox.classList.remove("checked");
+                checkbox.setAttribute("aria-checked", "false");
+                images[0].setAttribute("src", "img/unchecked_checkbox.png");
+
+            }
+            else
+            {
+
+                checkbox.classList.add("checked");
+                checkbox.setAttribute("aria-checked", "true");
+                images[0].setAttribute("src", "img/checked_checkbox.png");
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Checkbox Example</h1>
+
+<fieldset>
+    <legend>Addidtional Ingredients</legend>
+
+    <div class="checkbox" tabindex="0" role="checkbox" aria-checked="false">
+        <img class="checkbox_image" src="img/unchecked_checkbox.png" alt="">
+        Garlic
+    </div>
+    <div class="checkbox" tabindex="0" role="checkbox" aria-checked="false">
+        <img class="checkbox_image" src="img/unchecked_checkbox.png" alt="">
+        Cheese
+    </div>
+    <div class="checkbox" tabindex="0" role="checkbox" aria-checked="false">
+        <img class="checkbox_image" src="img/unchecked_checkbox.png" alt="">
+        Tomatoes
+    </div>
+</fieldset>
+</body>
+</html>

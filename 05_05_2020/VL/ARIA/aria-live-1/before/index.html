@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aria Live Demo</title>
+</head>
+<body>
+
+<div>
+    <h2>Score</h2>
+    <strong>Team1:</strong><span id="scoreTeam1">0</span><br>
+    <strong>Team2:</strong><span id="scoreTeam2">0</span><br>
+</div>
+
+
+<script>
+    setInterval(myTimer ,5000);
+    var scoreTeam1 = 0;
+    var scoreTeam2 = 0;
+    function myTimer() {
+        var teamNumber = Math.floor(Math.random() * 2) + 1;
+
+        if(teamNumber === 1){
+            scoreTeam1++;
+            document.getElementById("scoreTeam1").innerHTML = scoreTeam1.toString();
+        }else{
+            scoreTeam2++;
+            document.getElementById("scoreTeam2").innerHTML = scoreTeam2.toString();
+
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    color: #000;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.button:focus{
+    border: 2px solid #2f11ee;
+}
+
+
+.button:active {
+    background-color: #bbb;
+}
+
+
+.button_pressed {
+    color: #fff;
+    background: #333;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aria Checkbox Example</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            initCheckboxes();
+        });
+
+
+        function initCheckboxes(){
+            $(".checkbox").click(function () {
+                toggleCheckbox(this);
+
+            });
+        }
+
+        function toggleCheckbox(checkbox){
+
+            if ($(checkbox).hasClass("checked")) {
+                $(checkbox).find('.checkbox_image').attr("src","img/unchecked_checkbox.png");
+                $(checkbox).removeClass("checked");
+
+            }else{
+                $(checkbox).find('.checkbox_image').attr("src","img/checked_checkbox.png");
+                $(checkbox).addClass("checked");
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<h1>Checkbox Example</h1>
+
+<fieldset>
+    <legend>Addidtional Ingredients</legend>
+
+    <div class="checkbox">
+        <img class="checkbox_image" src="img/unchecked_checkbox.png" alt="">
+        Garlic
+    </div>
+    <div class="checkbox">
+        <img class="checkbox_image" src="img/unchecked_checkbox.png">
+        Cheese
+    </div>
+    <div class="checkbox">
+        <img class="checkbox_image" src="img/unchecked_checkbox.png">
+        Tomatoes
+    </div>
+</fieldset>
+</body>
+</html>

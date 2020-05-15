@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .hide {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <table>
+        <tr>
+            <th scope="col">Artikel</th>
+            <th scope="col">Anzahl</th>
+        </tr>
+        <tr>
+            <td>
+                Node.js Second Edition
+            </td>
+            <td>
+                <label class="hide" for="nodeJsAmount">Anzahl</label> <input id="nodeJsAmount" type="number">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                Vulkan Cookbook
+            </td>
+            <td>
+                <label class="hide" for="vulkanAmount">Anzahl</label> <input id="vulkanAmount" type="number">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Bestellen">
+</form>
+
+
+</body>
+</html>

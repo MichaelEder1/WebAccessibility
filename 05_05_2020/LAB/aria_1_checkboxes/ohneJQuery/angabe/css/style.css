@@ -1,0 +1,12 @@
+.checkbox{
+
+    padding-bottom: 10px;
+ }
+
+.checkbox > img{
+    vertical-align: middle;
+}
+
+fieldset{
+    display: inline;
+}

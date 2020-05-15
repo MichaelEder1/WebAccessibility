@@ -1,0 +1,69 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.dispno {
+	display: none;
+}
+
+.invisible {
+	display: block;
+	position: absolute;
+	width: 0em;
+	height: 0em;
+	left: -100em;
+	top: 0em;
+	overflow: hidden;
+}
+
+.header {
+}
+
+.menu {
+	margin-top: 2em;
+	margin-bottom: 1em; 
+	padding: 1em;
+	background: #efefef;
+}
+
+.menu ul {
+	margin: 0em;
+	padding: 0em;
+	left: 0em;
+}
+
+.menu li {
+	display: inline;
+	margin-right: 1em;
+	font-size: 130%;  
+}
+
+.footer {
+	border-top: 1px solid #555555;
+}
+
+.content fieldset {
+	width: 15em;
+	display: block;
+}
+
+.submitbtn {
+	margin-top: 1em;
+}
+
+.content input {
+	font-size: 100%;
+}
+
+.content table {
+	border-collapse: collapse;
+}
+
+.content th {
+	text-align: left;
+	padding: 0.2em;
+}
+
+.content td {
+	padding: 0.2em;	
+}

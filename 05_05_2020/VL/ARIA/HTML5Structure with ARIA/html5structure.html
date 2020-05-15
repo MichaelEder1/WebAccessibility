@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HTML5 Structure Demo</title>
+<style type="text/css">
+nav, main, header, footer, section, aside, article, div {
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin: 10px;
+}
+</style>
+</head>
+<body>
+	<h1>Landmark Navigation Examples</h1>
+	<h2>Using a Screen Reader to Navigate Landmarks</h2>
+	<ul>
+		<li><strong>JAWS:</strong> Use the <strong>semicolon</strong> ( ;
+			) key to go forward through landmarks, or shift + semicolon to go
+			backward.</li>
+		<li><strong>NVDA: </strong>Use the &quot;<strong>d</strong>&quot;
+			key to go forward through landmarks, or shift + d to go backward</li>
+		<li><strong>VoiceOver:</strong> <strong>Control + Option
+				+ right arrow</strong> (until &quot;Landmarks&quot; shows), then use the <strong>down
+				or up arrows</strong> to navigate the list.</li>
+	</ul>
+	
+<h2>HTML 5 and ARIA and aria-labels</h2>
+
+<header role="banner" aria-label="header">
+<p>This is a header with role=&quot;banner&quot; and aria-label=&quot;header&quot;. </p>
+<ul>
+  <li>JAWS says &quot;header banner&quot;</li>
+  <li>NVDA says &quot;banner landmark&quot;</li>
+  <li>VoiceOver says &quot;Header with 2 items. Banner&quot;</li>
+</ul>
+</header>
+
+<nav role="navigation" aria-label="main navigation">
+<p>This is a nav with role=&quot;navigation&quot; and aria-label=&quot;main navigation&quot;. </p>
+<ul>
+  <li>JAWS says &quot;main navigation navigation region&quot;</li>
+  <li>NVDA says &quot;navigation landmark&quot;</li>
+  <li>VoiceOver says &quot;main navigation navigation&quot;</li>
+</ul>
+</nav>
+<main role="main" aria-label="main content">
+<p>This is a main with role=&quot;main&quot; and aria-label=&quot;main content&quot;. </p>
+<ul>
+  <li>JAWS says &quot;main content main region&quot; (JAWS pronounces it as &quot;main con-TENT main region&quot;)</li>
+  <li>NVDA says &quot;main landmark&quot;</li>
+  <li>VoiceOver says &quot;Main content with 6 items. Main&quot; (The 6 items are the paragraph, the list, then the 4 divs.)</li>
+</ul>
+
+<section role="region" aria-label="section one">
+  <p>This is a section with role=&quot;region&quot; and aria-label=&quot;section one&quot;. </p>
+  <ul>
+    <li>JAWS says &quot;section one region&quot;</li>
+    <li>NVDA does not treat region as a landmark</li>
+    <li>VoiceOver does not treat region as a landmark</li>
+  </ul>
+</section>
+
+<section role="region" aria-label="section two">
+<p>This is a section with role=&quot;region&quot; and aria-label=&quot;section two&quot;. </p>
+<ul>
+  <li>JAWS says &quot;section two region&quot;</li>
+  <li>NVDA does not treat region as a landmark</li>
+  <li>VoiceOver does not treat region as a landmark</li>
+</ul>
+</section>
+
+<article role="article" aria-label="The sky is falling!">
+<p>This is an article with role=&quot;article&quot; and aria-label=&quot;The sky is falling!&quot; </p>
+<ul>
+  <li>JAWS says &quot;The sky is falling! Article&quot;</li>
+  <li>NVDA does not treat region as a landmark</li>
+  <li>VoiceOver does not treat article as a landmark</li>
+</ul>
+</article>
+
+<aside role="complementary" aria-label="sidebar">
+<p>This is an aside with role=&quot;complimentary&quot; and aria-label=&quot;sidebar&quot;. </p>
+<ul>
+  <li>JAWS says &quot;sidebar complimentary information&quot;</li>
+  <li>NVDA says &quot;complimentary landmark&quot;</li>
+  <li>VoiceOver says &quot;Sidebar with 2 items. Complementary&quot; (The 2 items are the paragraph and the list.)</li></ul></aside>
+
+</main>
+
+<footer role="contentinfo" aria-label="footer">
+<p>This is a footer with role=&quot;contentinfo&quot; and aria-label=&quot;footer&quot;. </p>
+<ul>
+  <li>JAWS says &quot;footer content information&quot; (JAWS pronounces it as &quot;footer con-TENT information&quot;)</li>
+  <li>NVDA says &quot;content into landmark&quot;</li>
+  <li>VoiceOver says &quot;Footer with 2 items. Footer&quot; (The 2 items are the paragraph and the list.)</li>
+</ul>
+</footer>
+</body>
+</html>

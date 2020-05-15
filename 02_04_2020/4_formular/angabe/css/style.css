@@ -1,0 +1,51 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.dispno {
+	display: none;
+}
+
+.invisible {
+	display: block;
+	position: absolute;
+	width: 0em;
+	height: 0em;
+	left: -100em;
+	top: 0em;
+	overflow: hidden;
+}
+
+fieldset {
+	width: 15em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+input {
+	font-size: 100%;
+}
+
+.row {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+abbr.error {
+	padding: 0.2em;
+	margin-right: 0.2em;
+	background-color: #dd0000;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.hide {
+	display: block;
+	position: absolute;
+	top: 0em;
+	left: -1000em;
+	height: 0em;
+	width: 0em;
+	overflow: hidden;
+}
