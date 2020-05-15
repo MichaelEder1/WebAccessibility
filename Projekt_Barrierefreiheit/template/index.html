@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="de" xmlns="http://www.w3.org/1999/html">
+<html lang="de">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -44,30 +43,33 @@
         <!-- Main Navigation -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <div class="navbar-nav ml-auto">
-                <div class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(aktuelle Seite)</span> </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">Aktuelles</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">Tutorials</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">Kontakt</a>
-                </div>
+                <ul id="navList">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(aktuelle Seite)</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aktuelles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </nav>
+
 <main>
     <header>
         <div class="container text-center">
             <div class="heading1">Willkommen bei PHP-Info</div>
-            <p class="lead">Einer Seite mit Informationen über PHP</p>
+            <p class="lead">Einer Seite mit Informationen &uuml;ber PHP</p>
         </div>
     </header>
 
@@ -75,78 +77,95 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="heading2">Über PHP</div>
+                    <h2>&Uuml;ber PHP</h2>
                     <p><img src="source/img/php-outline.png" id="php-outline" alt="">PHP (rekursives Akronym und
-                        Backronym für PHP: Hypertext Preprocessor, ursprünglich Personal Home Page Tools) ist eine
-                        Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung
+                        Backronym f&uuml;r PHP: Hypertext Preprocessor, urspr&uuml;nglich Personal Home Page Tools) ist
+                        eine
+                        Skriptsprache mit einer an C und Perl angelehnten Syntax, die haupts&auml;chlich zur Erstellung
                         dynamischer Webseiten oder Webanwendungen verwendet wird. PHP wird als freie Software unter der
-                        PHP-Lizenz verbreitet. PHP zeichnet sich durch breite Datenbankunterstützung und
-                        Internet-Protokolleinbindung sowie die Verfügbarkeit zahlreicher Funktionsbibliotheken aus </p>
+                        PHP-Lizenz verbreitet. PHP zeichnet sich durch breite Datenbankunterst&uuml;tzung und
+                        Internet-Protokolleinbindung sowie die Verf&uuml;gbarkeit zahlreicher Funktionsbibliotheken aus
+                    </p>
 
-                    <p>PHP wurde 1995 von Rasmus Lerdorf entwickelt. Der Begriff PHP stand damals noch für Personal Home
-                        Page Tools und war ursprünglich als Ersatz für eine Sammlung von Perl-Skripten gedacht, die
+                    <p>PHP wurde 1995 von Rasmus Lerdorf entwickelt. Der Begriff PHP stand damals noch f&uuml;r Personal
+                        Home
+                        Page Tools und war urspr&uuml;nglich als Ersatz f&uuml;r eine Sammlung von Perl-Skripten
+                        gedacht, die
                         Lerdorf zur Protokollierung der Zugriffe auf seinen Online-Lebenslauf geschrieben hatte. </p>
+
                     <span class="text-center"> <img src="source/img/lerdorf2007.jpg" id="lerdorf" alt="Rasmus Lerdorf"> </span>
+
                     <br>
+
                     <p>
-                        Von 2002 bis Ende 2009 arbeitete Lerdorf für Yahoo. Seit 2012 arbeitet er für Etsy. Lerdorf
-                        trägt regelmäßig auf Open-Source-Konferenzen vor. Während seines Vortrags auf der OSCMS 2007
-                        präsentierte er zu jedem anderen Projekt, das dort vorgestellt wurde, mindestens eine
-                        Sicherheitslücke. </p>
+                        Von 2002 bis Ende 2009 arbeitete Lerdorf f&uuml;r Yahoo. Seit 2012 arbeitet er f&uuml;r Etsy.
+                        Lerdorf
+                        tr&auml;gt regelm&auml;ßig auf Open-Source-Konferenzen vor. W&auml;hrend seines Vortrags auf der
+                        OSCMS 2007
+                        pr&auml;sentierte er zu jedem anderen Projekt, das dort vorgestellt wurde, mindestens eine
+                        Sicherheitsl&uuml;cke. </p>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="php-functioning">
         <div class="container">
             <div class="row">
-                <div class="heading2">Funktionsweise</div>
+                <h2>Funktionsweise</h2>
                 <p>
                     PHP ist ein System, das PHP-Code serverseitig verarbeitet. Das bedeutet, dass der Quelltext nicht an
-                    den Webbrowser übermittelt wird, sondern an einen Interpreter auf dem Webserver. Erst die Ausgabe
-                    des PHP-Interpreters wird an den Browser geschickt. In den meisten Fällen ist das ein HTML-Dokument,
-                    wobei es mit PHP aber auch möglich ist, andere Dateitypen, wie Bilder oder PDF-Dateien, zu
+                    den Webbrowser &uuml;bermittelt wird, sondern an einen Interpreter auf dem Webserver. Erst die
+                    Ausgabe
+                    des PHP-Interpreters wird an den Browser geschickt. In den meisten F&auml;llen ist das ein
+                    HTML-Dokument,
+                    wobei es mit PHP aber auch m&ouml;glich ist, andere Dateitypen, wie Bilder oder PDF-Dateien, zu
                     generieren. </p>
-
                 <p>
-                    Um eine PHP-Datei im Rahmen einer Webanwendung ausführen zu können, benötigt man ein System, das mit
+                    Um eine PHP-Datei im Rahmen einer Webanwendung ausf&uuml;hren zu k&ouml;nnen, ben&ouml;tigt man ein
+                    System, das mit
                     den in der Datei enthaltenen Anweisungen umgehen kann. Aus diesem Grund wird durch eine
                     Schnittstelle, wie <abbr title="Internet Server API">ISAP</abbr> oder
                     <abbr title="Common Gateway Interface">CGI</abbr>, der Interpreter von einem Server-Daemon oder
-                    Server-Dienst, wie Apache oder <abbr title="Internet Information Services">IIS</abbr>, ausgeführt.
+                    Server-Dienst, wie Apache oder <abbr title="Internet Information Services">IIS</abbr>, ausgef&uuml;hrt.
                     Die Kombination von Linux/Windows/macOS als Betriebssystem, Apache als Webserver, MySQL als
-                    Datenbanksystem und PHP wird <abbr title="Akronym für Linux, Apache, MySQL, PHP"></abbr>LAMP (für
-                    Linux), <abbr title="Akronym für Windows, Apache, MySQL, and PHP">WAMP</abbr> (für Windows) oder
-                    <abbr title="Akronym für Macintosh, Apache, MySQL und PHP">MAMP</abbr> (für Mac OS X) genannt.
+                    Datenbanksystem und PHP wird <abbr title="Akronym f&uuml;r Linux, Apache, MySQL, PHP"></abbr>LAMP (f&uuml;r
+                    Linux), <abbr title="Akronym f&uuml;r Windows, Apache, MySQL, and PHP">WAMP</abbr> (f&uuml;r
+                    Windows) oder
+                    <abbr title="Akronym f&uuml;r Macintosh, Apache, MySQL und PHP">MAMP</abbr> (f&uuml;r Mac OS X)
+                    genannt.
                     Fertige LAMP-, MAMP- und WAMP-Pakete, die das einzelne Laden und Konfigurieren von Paketen aus dem
-                    Internet unnötig machen, werden etwa im Projekt <abbr title="Apache, MySQL, Perl, PHP">XAMPP</abbr>
-                    entwickelt. Hier gibt es Versionen für Linux, Solaris, Windows und Mac OS X, die jedoch nur für
+                    Internet unn&ouml;tig machen, werden etwa im Projekt <abbr
+                        title="Apache, MySQL, Perl, PHP">XAMPP</abbr>
+                    entwickelt. Hier gibt es Versionen f&uuml;r Linux, Solaris, Windows und Mac OS X, die jedoch nur f&uuml;r
                     Test- und Entwicklungsumgebungen genutzt werden sollen.</p>
 
                 <figure class="figure text-center">
-                    <img src="source/img/funktionsweise.png" class="php-functionality" alt="Darstellung der
-                    Funktionsweise von PHP"> <br>
-                    <figcaption>Darstellung der Funktionswese von PHP</figcaption>
+                    <img src="source/img/funktionsweise.png" class="php-functionality" alt=""> <br>
+                    <figcaption>Darstellung der Funktionsweise von PHP</figcaption>
                 </figure>
                 <p>
-                    Da PHP normalerweise in einer Webserver-Umgebung läuft, unterliegt es auch dem zustandslosen HTTP.
+                    Da PHP normalerweise in einer Webserver-Umgebung l&auml;uft, unterliegt es auch dem zustandslosen
+                    HTTP.
                     Jede PHP-Seite belastet den Webserver durch den Interpreter, zudem arbeitet der Interpreter den
                     Quelltext bei jedem Aufruf erneut ab. Das mindert die Reaktionsgeschwindigkeit des Servers und
-                    erhöht die Last. Um dem entgegenzuwirken, stehen verschiedene Bytecode-Caches zur Verfügung, die
-                    eine zur Ausführung vorbereitete Version des Programmes zwischenspeichern und somit den Zugriff auf
-                    diese Datei beim nächsten Aufruf beschleunigen. </p>
+                    erh&ouml;ht die Last. Um dem entgegenzuwirken, stehen verschiedene Bytecode-Caches zur Verf&uuml;gung,
+                    die
+                    eine zur Ausf&uuml;hrung vorbereitete Version des Programmes zwischenspeichern und somit den Zugriff
+                    auf
+                    diese Datei beim n&auml;chsten Aufruf beschleunigen. </p>
             </div>
         </div>
     </section>
     <section id="php-versions">
         <div class="container">
             <div class="row">
-                <div class="heading2">Versionsgeschichte von PHP</div>
+                <h2>Versionsgeschichte von PHP</h2>
                 <table class="table table-striped">
                     <tr>
                         <th scope="col" class="head">Haupt-<br/>version</th>
-                        <th scope="col" class="head">Veröffentlichung</th>
-                        <th scope="col" class="head">Wichtigste Änderungen</th>
+                        <th scope="col" class="head">Ver&ouml;ffentlichung</th>
+                        <th scope="col" class="head">Wichtigste &Auml;nderungen</th>
                     </tr>
                     <tr>
                         <th scope="row" class="head">1.x</th>
@@ -169,14 +188,15 @@
                         <td>Die Entwicklung wird nicht mehr nur von einer Person vorangetrieben.
                             <a href="https://de.wikipedia.org/wiki/Zeev_Suraski">Zeev Suraski</a> und
                             <a href="https://de.wikipedia.org/wiki/Andi_Gutmans">Andi Gutmans</a> schrieben die
-                            Codebasis für diese Version vollständig neu.
+                            Codebasis f&uuml;r diese Version vollst&auml;ndig neu.
                         </td>
                     </tr>
                     <tr>
                         <th scope="row" class="head">4.x</th>
                         <td>22. Mai 2000</td>
-                        <td>Einfache objektorientierte Programmierung hinzugefügt. Hinzufügen einer fortgeschrittenen
-                            zweistufigen Parser- bzw. Ausführungsmaschine, Zend Engine genannt.
+                        <td>Einfache objektorientierte Programmierung hinzugef&uuml;gt. Hinzuf&uuml;gen einer
+                            fortgeschrittenen
+                            zweistufigen Parser- bzw. Ausf&uuml;hrungsmaschine, Zend Engine genannt.
                         </td>
                     </tr>
                     <tr>
@@ -184,14 +204,14 @@
                         <td>13. Juli 2004</td>
                         <td>Neuerungen: Reflections, API, MySQLi(MySQL verbessert, objektorientiert und auf aktuelle
                             MySQL-Versionen zugeschnitten), SQLite integriert, SimpleXML (einfacher XML-Parser, Update
-                            und Insert von Kindelementen möglich), DOM-Unterstützung.
+                            und Insert von Kindelementen m&ouml;glich), DOM-Unterst&uuml;tzung.
                         </td>
                     </tr>
                     <tr>
                         <th scope="row" class="head">7.x</th>
                         <td>3. Dezember 2015</td>
                         <td>Neuerungen: Neue Scalar-Type-Hints und Return-Typen, kombinierte Vergleichsoperatoren.
-                            Unterstützung für 64-Bit. Alle veralteten Funktionen wurden entfernt.
+                            Unterst&uuml;tzung f&uuml;r 64-Bit. Alle veralteten Funktionen wurden entfernt.
                         </td>
                     </tr>
                 </table>
@@ -203,8 +223,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="heading2">Links zu PHP Tutorials</div>
-                    <ul>
+                    <h2>Link zu PHP-Tutorials</h2>
+                    <ul id="linkList">
                         <li><a href="https://www.php-einfach.de/php-tutorial/">PHP Tutorial – PHP lernen -
                             PHP-Einfach</a></li>
                         <li><a href="https://www.w3schools.com/php/">PHP 5 Tutorial - W3Schools</a></li>
@@ -227,7 +247,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="heading2">PHP Quiz</div>
+                    <h2>PHP Quiz</h2>
                     <form id="quiz" method="POST" action="#">
                         <div class="form-check">
                             <label for="who"><strong>Wer ist der Erfinder von PHP?</strong></label>
@@ -235,7 +255,7 @@
                         </div>
                         <div class="form-check">
                             <fieldset>
-                                <legend>Die Syntax von PHP ist ähnlich zu:</legend>
+                                <legend>Die Syntax von PHP ist &auml;hnlich zu:</legend>
                                 <label for="defaultCheck1">
                                     <input class="form-check-input" type="checkbox" value="c" id="defaultCheck1"
                                            name="syntax">C</label><br>
@@ -252,7 +272,7 @@
                         </div>
                         <div class="form-check">
                             <fieldset>
-                                <legend>PHP ist die Abkürzung für ...:</legend>
+                                <legend>PHP ist die Abk&uuml;rzung f&uuml;r ...:</legend>
                                 <label for="radio1">
                                     <input class="form-check-input" type="radio" name="php-abbr" id="radio1"
                                            value="option1"
@@ -297,11 +317,10 @@
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.slim.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- eigene Scripts bzw. jQuery 3.5.1 -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
-
-
 </body>
-
 </html>

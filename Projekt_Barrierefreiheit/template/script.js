@@ -1,9 +1,18 @@
-$(document).ready(function () {
+$(document).ready(function ()
+{
 	
-	$( "#skip_menu" ).focusin(function() {
+	//Seitenbereichsmenü
+	let menu = $("#skip_menu")
+	
+	//Menü einblenden bei Fokussierung
+	menu.focusin(function ()
+	{
 		$(this).removeClass('hide');
 	});
-	$( "#skip_menu" ).focusout(function() {
+	
+	//Menü ausblenden bei Defokussierung
+	menu.focusout(function ()
+	{
 		$(this).addClass('hide');
 	});
 });

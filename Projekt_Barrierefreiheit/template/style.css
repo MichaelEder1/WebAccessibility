@@ -16,10 +16,17 @@ a {
     color: #006ADB !important;
 }
 
-ul{
-    list-style-type: "- " !important;
+#linkList{
+    list-style-type: "-" !important;
 }
 
+#navList{
+    list-style: none;
+}
+
+#navList li{
+    display: inline-block;
+}
 
 .hide {
     display: block;
