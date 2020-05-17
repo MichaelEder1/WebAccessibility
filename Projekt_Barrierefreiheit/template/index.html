@@ -11,19 +11,15 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="source/css/style.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <title>PHP-Info</title>
-
+    <title>PHP-Info: Home</title>
 </head>
-
 <body>
-
 <div id="skip_menu" class="hide">
     <ul>
         <li><a href="#about" accesskey="0"> Zum Inhalt (<span lang="en">Accesskey</span> 0)</a></li>
         <li><a href="#navbarResponsive" accesskey="1"> Zum Men&uuml; (<span lang="en">Accesskey</span> 1)</a></li>
     </ul>
 </div>
-
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -41,7 +37,7 @@
             <div class="navbar-nav ml-auto">
                 <ul id="navList">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" active>Home <span class="sr-only">(aktuelle Seite)</span></a>
+                        <a class="nav-link" href="#">Home <span class="sr-only">(aktuelle Seite)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Aktuelles</a>
@@ -75,31 +71,26 @@
                 <div class="col-lg-8 mx-auto">
                     <h2>&Uuml;ber PHP</h2>
                     <p><img src="source/img/php-outline.png" id="php-outline" alt="">PHP (rekursives Akronym und
-                        Backronym f&uuml;r PHP: Hypertext Preprocessor, urspr&uuml;nglich Personal Home Page Tools) ist
-                        eine
-                        Skriptsprache mit einer an C und Perl angelehnten Syntax, die haupts&auml;chlich zur Erstellung
+                        Backronym f&uuml;r PHP: <span lang="en">Hypertext Preprocessor</span>, urspr&uuml;nglich
+                        <span lang="en">Personal Home Page Tools</span>) ist eine Skriptsprache mit einer an C und
+                        <span lang="en">Perl</span> angelehnten Syntax, die haupts&auml;chlich zur Erstellung
                         dynamischer Webseiten oder Webanwendungen verwendet wird. PHP wird als freie Software unter der
                         PHP-Lizenz verbreitet. PHP zeichnet sich durch breite Datenbankunterst&uuml;tzung und
-                        Internet-Protokolleinbindung sowie die Verf&uuml;gbarkeit zahlreicher Funktionsbibliotheken aus
+                        Internet-Protokolleinbindung sowie die Verf&uuml;gbarkeit zahlreicher Funktionsbibliotheken aus.
                     </p>
 
-                    <p>PHP wurde 1995 von Rasmus Lerdorf entwickelt. Der Begriff PHP stand damals noch f&uuml;r Personal
-                        Home
-                        Page Tools und war urspr&uuml;nglich als Ersatz f&uuml;r eine Sammlung von Perl-Skripten
-                        gedacht, die
-                        Lerdorf zur Protokollierung der Zugriffe auf seinen Online-Lebenslauf geschrieben hatte. </p>
+                    <p>PHP wurde 1995 von Rasmus Lerdorf entwickelt. Der Begriff PHP stand damals noch f&uuml;r
+                        <span lang="en">Personal Home Page Tools</span> und war urspr&uuml;nglich als Ersatz f&uuml;r
+                        eine Sammlung von Perl-Skripten gedacht, die Lerdorf zur Protokollierung der Zugriffe auf seinen
+                        Online-Lebenslauf geschrieben hatte. </p>
 
                     <img class="text-center" src="source/img/lerdorf2007.jpg" id="lerdorf" alt="Rasmus Lerdorf">
-
                     <br>
-
                     <p>
                         Von 2002 bis Ende 2009 arbeitete Lerdorf f&uuml;r Yahoo. Seit 2012 arbeitet er f&uuml;r Etsy.
-                        Lerdorf
-                        tr&auml;gt regelm&auml;ßig auf Open-Source-Konferenzen vor. W&auml;hrend seines Vortrags auf der
-                        OSCMS 2007
-                        pr&auml;sentierte er zu jedem anderen Projekt, das dort vorgestellt wurde, mindestens eine
-                        Sicherheitsl&uuml;cke. </p>
+                        Lerdorf tr&auml;gt regelm&auml;ßig auf Open-Source-Konferenzen vor. W&auml;hrend seines Vortrags
+                        auf der OSCMS 2007 pr&auml;sentierte er zu jedem anderen Projekt, das dort vorgestellt wurde,
+                        mindestens eine Sicherheitsl&uuml;cke. </p>
                 </div>
             </div>
         </div>
@@ -109,47 +100,39 @@
         <div class="container">
             <div class="row">
                 <h2>Funktionsweise</h2>
-                <p>
-                    PHP ist ein System, das PHP-Code serverseitig verarbeitet. Das bedeutet, dass der Quelltext nicht an
+                <p> PHP ist ein System, das PHP-Code serverseitig verarbeitet. Das bedeutet, dass der Quelltext nicht an
                     den Webbrowser &uuml;bermittelt wird, sondern an einen Interpreter auf dem Webserver. Erst die
-                    Ausgabe
-                    des PHP-Interpreters wird an den Browser geschickt. In den meisten F&auml;llen ist das ein
-                    HTML-Dokument,
-                    wobei es mit PHP aber auch m&ouml;glich ist, andere Dateitypen, wie Bilder oder PDF-Dateien, zu
-                    generieren. </p>
-                <p>
-                    Um eine PHP-Datei im Rahmen einer Webanwendung ausf&uuml;hren zu k&ouml;nnen, ben&ouml;tigt man ein
-                    System, das mit
-                    den in der Datei enthaltenen Anweisungen umgehen kann. Aus diesem Grund wird durch eine
-                    Schnittstelle, wie <abbr title="Internet Server API">ISAP</abbr> oder
-                    <abbr title="Common Gateway Interface">CGI</abbr>, der Interpreter von einem Server-Daemon oder
-                    Server-Dienst, wie Apache oder <abbr title="Internet Information Services">IIS</abbr>, ausgef&uuml;hrt.
-                    Die Kombination von Linux/Windows/macOS als Betriebssystem, Apache als Webserver, MySQL als
-                    Datenbanksystem und PHP wird <abbr title="Akronym f&uuml;r Linux, Apache, MySQL, PHP"></abbr>LAMP (f&uuml;r
-                    Linux), <abbr title="Akronym f&uuml;r Windows, Apache, MySQL, and PHP">WAMP</abbr> (f&uuml;r
-                    Windows) oder
-                    <abbr title="Akronym f&uuml;r Macintosh, Apache, MySQL und PHP">MAMP</abbr> (f&uuml;r Mac OS X)
-                    genannt.
-                    Fertige LAMP-, MAMP- und WAMP-Pakete, die das einzelne Laden und Konfigurieren von Paketen aus dem
-                    Internet unn&ouml;tig machen, werden etwa im Projekt
-                    <abbr title="Apache, MySQL, Perl, PHP">XAMPP</abbr>
-                    entwickelt. Hier gibt es Versionen f&uuml;r Linux, Solaris, Windows und Mac OS X, die jedoch nur f&uuml;r
-                    Test- und Entwicklungsumgebungen genutzt werden sollen.</p>
+                    Ausgabe des PHP-Interpreters wird an den Browser geschickt. In den meisten F&auml;llen ist das ein
+                    HTML-Dokument, wobei es mit PHP aber auch m&ouml;glich ist, andere Dateitypen, wie Bilder oder
+                    PDF-Dateien, zu generieren. </p>
+                <p> Um eine PHP-Datei im Rahmen einer Webanwendung ausf&uuml;hren zu k&ouml;nnen, ben&ouml;tigt man ein
+                    System, das mit den in der Datei enthaltenen Anweisungen umgehen kann. Aus diesem Grund wird durch
+                    eine Schnittstelle, wie <span lang="en"><abbr title="Internet Server API">ISAP</abbr></span>
+                    oder<span lang="en"><abbr title="Common Gateway Interface">CGI</abbr></span>, der Interpreter von
+                    einem Server-Daemon oder Server-Dienst, wie Apache oder
+                    <span lang="en"><abbr title="Internet Information Services">IIS</abbr></span>, ausgef&uuml;hrt. Die
+                    Kombination von Linux/Windows/macOS als Betriebssystem, <span lang="en">Apache</span> als Webserver,
+                    MySQL als Datenbanksystem und PHP
+                    wird<span lang="en"><abbr title="Akronym f&uuml;r Linux, Apache, MySQL, PHP"></abbr>LAMP (f&uuml;rLinux),
+                    <abbr title="Akronym f&uuml;r Windows, Apache, MySQL, and PHP">WAMP</abbr> (f&uuml;rWindows) oder
+                    <abbr title="Akronym f&uuml;r Macintosh, Apache, MySQL und PHP">MAMP</abbr></span>
+                    (f&uuml;r Mac OS X) genannt. Fertige <span lang="en">LAMP-, MAMP- und WAMP-Pakete</span>, die das
+                    einzelne Laden und Konfigurieren von Paketen aus dem Internet unn&ouml;tig machen, werden etwa im
+                    Projekt<abbr title="Apache, MySQL, Perl, PHP">XAMPP</abbr>entwickelt. Hier gibt es Versionen f&uuml;r
+                    Linux, Solaris, Windows und Mac OS X, die jedoch nur f&uuml;r Test- und Entwicklungsumgebungen
+                    genutzt werden sollen. </p>
 
                 <figure class="figure text-center">
                     <img src="source/img/funktionsweise.png" class="php-functionality" alt=""> <br>
                     <figcaption>Darstellung der Funktionsweise von PHP</figcaption>
                 </figure>
-                <p>
-                    Da PHP normalerweise in einer Webserver-Umgebung l&auml;uft, unterliegt es auch dem zustandslosen
-                    HTTP.
-                    Jede PHP-Seite belastet den Webserver durch den Interpreter, zudem arbeitet der Interpreter den
-                    Quelltext bei jedem Aufruf erneut ab. Das mindert die Reaktionsgeschwindigkeit des Servers und
+
+                <p> Da PHP normalerweise in einer Webserver-Umgebung l&auml;uft, unterliegt es auch dem zustandslosen
+                    HTTP. Jede PHP-Seite belastet den Webserver durch den Interpreter, zudem arbeitet der Interpreter
+                    den Quelltext bei jedem Aufruf erneut ab. Das mindert die Reaktionsgeschwindigkeit des Servers und
                     erh&ouml;ht die Last. Um dem entgegenzuwirken, stehen verschiedene Bytecode-Caches zur Verf&uuml;gung,
-                    die
-                    eine zur Ausf&uuml;hrung vorbereitete Version des Programmes zwischenspeichern und somit den Zugriff
-                    auf
-                    diese Datei beim n&auml;chsten Aufruf beschleunigen. </p>
+                    die eine zur Ausf&uuml;hrung vorbereitete Version des Programmes zwischenspeichern und somit den
+                    Zugriff auf diese Datei beim n&auml;chsten Aufruf beschleunigen. </p>
             </div>
         </div>
     </section>
@@ -159,9 +142,11 @@
                 <h2>Versionsgeschichte von PHP</h2>
                 <table class="table table-striped">
                     <thead>
-                    <th scope="col" class="head">Haupt-<br/>version</th>
-                    <th scope="col" class="head">Ver&ouml;ffentlichung</th>
-                    <th scope="col" class="head">Wichtigste &Auml&Auml;nderungen</th>
+                    <tr>
+                        <th scope="col" class="head">Haupt-<br/>version</th>
+                        <th scope="col" class="head">Ver&ouml;ffentlichung</th>
+                        <th scope="col" class="head">Wichtigste &Auml;nderungen</th>
+                    </tr>
                     </thead>
                     <tbody>
                     <tr>
@@ -248,8 +233,9 @@
                     <h2>PHP Quiz</h2>
                     <form id="quiz" method="POST" action="#">
                         <div class="form-check">
-                            <label for="who"><strong>Wer ist der Erfinder von PHP?</strong></label>
-                            <input type="text" class="form-control" id="who" name="who">
+                            <label for="who"><strong>Wer ist der Erfinder von
+                                PHP?<span class="req">*</span></strong></label>
+                            <input type="text" class="form-control" id="who" name="who" required>
                         </div>
                         <div class="form-check">
                             <fieldset>
@@ -266,9 +252,9 @@
                         </div>
                         <div class="form-check">
                             <fieldset>
-                                <legend>PHP ist die Abk&uuml;rzung f&uuml;r ...:</legend>
+                                <legend>PHP ist die Abk&uuml;rzung f&uuml;r ..:<span class="req">*</span></legend>
                                 <label for="radio1">
-                                    <input class="form-check-input" type="radio" name="php-abbr" id="radio1" value="option1" checked>
+                                    <input class="form-check-input" type="radio" name="php-abbr" id="radio1" value="option1" required>
                                     Hypertext Preprocessor</label> <br>
                                 <label for="radio2">
                                     <input class="form-check-input" type="radio" name="php-abbr" id="radio2" value="option2">
@@ -278,12 +264,16 @@
                             </fieldset>
                         </div>
                         <div class="form-check">
-                            <label for="inputState"><strong>Wie schreibt man "Hello World" in PHP?</strong></label>
-                            <select id="inputState" class="form-control">
-                                <option selected>document.write("Hello World")</option>
-                                <option>echo "Hello World";</option>
-                                <option>"Hello World";</option>
-                                <option>System.out.println("Hello World");</option>
+                            <label for="inputState"><strong>Wie schreibt man "Hello World" in
+                                PHP?<span class="req">*</span></strong></label>
+                            <select id="inputState" class="form-control" required>
+                                <option value="">Bitte ausw&auml;hlen</option>
+                                <option value="document.write('Hello World!')">document.write("Hello World")</option>
+                                <option value="echo('Hello World!';)">echo "Hello World";</option>
+                                <option value="('Hello World!')">"Hello World";</option>
+                                <option value="System.our.println('Hello World!')">System.out.println("Hello World")
+                                    ;
+                                </option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary">
