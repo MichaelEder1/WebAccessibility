@@ -16,16 +16,20 @@ a {
     color: #006ADB !important;
 }
 
-#linkList{
+#linkList {
     list-style-type: "-" !important;
 }
 
-#navList{
+#navList {
     list-style: none;
 }
 
-#navList li{
+#navList li {
     display: inline-block;
+}
+
+.btn-primary{
+    background-color: #006ADB !important;
 }
 
 .hide {
@@ -38,7 +42,7 @@ a {
     overflow: hidden;
 }
 
-#skip_menu>ul {
+#skip_menu > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -46,11 +50,11 @@ a {
     background-color: #333333;
 }
 
-#skip_menu>ul>li {
+#skip_menu > ul > li {
     float: left;
 }
 
-#skip_menu>ul>li  a {
+#skip_menu > ul > li a {
     display: block;
     color: #FFFFFF;
     text-align: center;
@@ -58,11 +62,11 @@ a {
     text-decoration: none;
 }
 
-#skip_menu>ul>li>a:HOVER, #skip_menu>ul>li>a:FOCUS {
+#skip_menu > ul > li > a:HOVER, #skip_menu > ul > li > a:FOCUS {
     background-color: white;
     color: black;
 }
 
-.req{
-    color:red !important;
+.req {
+    color: red !important;
 }
