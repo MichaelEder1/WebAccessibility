@@ -1,0 +1,72 @@
+.nav-link {
+    color: white !important;
+}
+
+.active a {
+    color: #FFEB0F !important;
+    font-weight: bold !important;
+}
+
+header, #submit {
+    background-color: #006ADB;
+    color: white;
+}
+
+a {
+    color: #006ADB !important;
+}
+
+#linkList {
+    list-style-type: "-" !important;
+}
+
+#navList {
+    list-style: none;
+}
+
+#navList li {
+    display: inline-block;
+}
+
+.btn-primary{
+    background-color: #006ADB !important;
+}
+
+.hide {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -500em;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+#skip_menu > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#skip_menu > ul > li {
+    float: left;
+}
+
+#skip_menu > ul > li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#skip_menu > ul > li > a:HOVER, #skip_menu > ul > li > a:FOCUS {
+    background-color: white;
+    color: black;
+}
+
+.req {
+    color: red !important;
+}

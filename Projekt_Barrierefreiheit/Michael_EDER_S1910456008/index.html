@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Michael Eder">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="source/css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>PHP-Info: Home</title>
+</head>
+<body>
+<div id="skip_menu" class="hide">
+    <ul>
+        <li><a href="#about" accesskey="0"> Zum Inhalt (<span lang="en">Accesskey</span> 0)</a></li>
+        <li><a href="#navbarResponsive" accesskey="1"> Zum Men&uuml; (<span lang="en">Accesskey</span> 1)</a></li>
+    </ul>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <!-- Home Link -->
+        <a class="navbar-brand" href="#"><img src="source/img/php-logo.png" alt="Logo PHP Info"></a>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Main Navigation -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="navbar-nav ml-auto">
+                <ul id="navList">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(aktuelle Seite)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aktuelles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <header>
+        <div class="container text-center">
+            <div class="heading1">Willkommen bei PHP-Info</div>
+            <p class="lead">Einer Seite mit Informationen &uuml;ber PHP</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>&Uuml;ber PHP</h2>
+                    <p><img src="source/img/php-outline.png" id="php-outline" alt="">PHP (rekursives Akronym und
+                        Backronym f&uuml;r PHP: <span lang="en">Hypertext Preprocessor</span>, urspr&uuml;nglich
+                        <span lang="en">Personal Home Page Tools</span>) ist eine Skriptsprache mit einer an C und
+                        <span lang="en">Perl</span> angelehnten Syntax, die haupts&auml;chlich zur Erstellung
+                        dynamischer Webseiten oder Webanwendungen verwendet wird. PHP wird als freie Software unter der
+                        PHP-Lizenz verbreitet. PHP zeichnet sich durch breite Datenbankunterst&uuml;tzung und
+                        Internet-Protokolleinbindung sowie die Verf&uuml;gbarkeit zahlreicher Funktionsbibliotheken aus.
+                    </p>
+
+                    <p>PHP wurde 1995 von Rasmus Lerdorf entwickelt. Der Begriff PHP stand damals noch f&uuml;r
+                        <span lang="en">Personal Home Page Tools</span> und war urspr&uuml;nglich als Ersatz f&uuml;r
+                        eine Sammlung von Perl-Skripten gedacht, die Lerdorf zur Protokollierung der Zugriffe auf seinen
+                        Online-Lebenslauf geschrieben hatte. </p>
+
+                    <img class="text-center" src="source/img/lerdorf2007.jpg" id="lerdorf" alt="Rasmus Lerdorf">
+                    <br>
+                    <p>
+                        Von 2002 bis Ende 2009 arbeitete Lerdorf f&uuml;r Yahoo. Seit 2012 arbeitet er f&uuml;r Etsy.
+                        Lerdorf tr&auml;gt regelm&auml;ßig auf Open-Source-Konferenzen vor. W&auml;hrend seines Vortrags
+                        auf der OSCMS 2007 pr&auml;sentierte er zu jedem anderen Projekt, das dort vorgestellt wurde,
+                        mindestens eine Sicherheitsl&uuml;cke. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="php-functioning">
+        <div class="container">
+            <div class="row">
+                <h2>Funktionsweise</h2>
+                <p> PHP ist ein System, das PHP-Code serverseitig verarbeitet. Das bedeutet, dass der Quelltext nicht an
+                    den Webbrowser &uuml;bermittelt wird, sondern an einen Interpreter auf dem Webserver. Erst die
+                    Ausgabe des PHP-Interpreters wird an den Browser geschickt. In den meisten F&auml;llen ist das ein
+                    HTML-Dokument, wobei es mit PHP aber auch m&ouml;glich ist, andere Dateitypen, wie Bilder oder
+                    PDF-Dateien, zu generieren. </p>
+                <p> Um eine PHP-Datei im Rahmen einer Webanwendung ausf&uuml;hren zu k&ouml;nnen, ben&ouml;tigt man ein
+                    System, das mit den in der Datei enthaltenen Anweisungen umgehen kann. Aus diesem Grund wird durch
+                    eine Schnittstelle, wie <span lang="en"><abbr title="Internet Server API">ISAP</abbr></span>
+                    oder<span lang="en"><abbr title="Common Gateway Interface">CGI</abbr></span>, der Interpreter von
+                    einem Server-Daemon oder Server-Dienst, wie Apache oder
+                    <span lang="en"><abbr title="Internet Information Services">IIS</abbr></span>, ausgef&uuml;hrt. Die
+                    Kombination von Linux/Windows/macOS als Betriebssystem, <span lang="en">Apache</span> als Webserver,
+                    MySQL als Datenbanksystem und PHP
+                    wird<span lang="en"><abbr title="Akronym f&uuml;r Linux, Apache, MySQL, PHP"></abbr>LAMP (f&uuml;rLinux),
+                    <abbr title="Akronym f&uuml;r Windows, Apache, MySQL, and PHP">WAMP</abbr> (f&uuml;rWindows) oder
+                    <abbr title="Akronym f&uuml;r Macintosh, Apache, MySQL und PHP">MAMP</abbr></span>
+                    (f&uuml;r Mac OS X) genannt. Fertige <span lang="en">LAMP-, MAMP- und WAMP-Pakete</span>, die das
+                    einzelne Laden und Konfigurieren von Paketen aus dem Internet unn&ouml;tig machen, werden etwa im
+                    Projekt<abbr title="Apache, MySQL, Perl, PHP">XAMPP</abbr>entwickelt. Hier gibt es Versionen f&uuml;r
+                    Linux, Solaris, Windows und Mac OS X, die jedoch nur f&uuml;r Test- und Entwicklungsumgebungen
+                    genutzt werden sollen. </p>
+
+                <!-- Ich habe den Beschreibungs-Text des Bildes in ein neues HTML File geschrieben und darauf mit
+                longdesc verwiesen - allerdings wird dieses Element anscheinend (noch) nicht unterstützt, jedoch
+                sollte es laut caniuse.com in aktuelleren Browsern seit Anfang dieses Jahres unterstützt werden.
+                Deshalb habe ich den Text  auch auf der Seite gelassen.-->
+
+                <figure class="figure text-center">
+                    <img src="source/img/funktionsweise.png" class="php-functionality" alt="" longdesc="descriptionOfImage.html">
+                    <br>
+                    <figcaption>Darstellung der Funktionsweise von PHP</figcaption>
+                </figure>
+            </div>
+            <p> Da PHP normalerweise in einer Webserver-Umgebung l&auml;uft, unterliegt es auch dem zustandslosen
+                HTTP. Jede PHP-Seite belastet den Webserver durch den Interpreter, zudem arbeitet der Interpreter
+                den Quelltext bei jedem Aufruf erneut ab. Das mindert die Reaktionsgeschwindigkeit des Servers und
+                erh&ouml;ht die Last. Um dem entgegenzuwirken, stehen verschiedene Bytecode-Caches zur Verf&uuml;gung,
+                die eine zur Ausf&uuml;hrung vorbereitete Version des Programmes zwischenspeichern und somit den
+                Zugriff auf diese Datei beim n&auml;chsten Aufruf beschleunigen. </p>
+        </div>
+    </section>
+    <section id="php-versions">
+        <div class="container">
+            <div class="row">
+                <h2>Versionsgeschichte von PHP</h2>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="head">Haupt-<br/>version</th>
+                        <th scope="col" class="head">Ver&ouml;ffentlichung</th>
+                        <th scope="col" class="head">Wichtigste &Auml;nderungen</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" class="head">1.x</th>
+                        <td>8. Juni 1995</td>
+                        <td>Offiziell vom Entwickler <a href="https://de.wikipedia.org/wiki/Rasmus_Lerdorf">Rasmus
+                            Lerdorf</a> "Personal Home Page Tools (PHP Tools)" genannt. Das ist die erste Verwendung des
+                            Begriffes "PHP".
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="head">2.x</th>
+                        <td>16. April 1996</td>
+                        <td>Von den Entwicklern als das "schnellste und einfachste Tool" zum Erstellen dynamischer
+                            Webseiten bezeichnet.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="head">3.x</th>
+                        <td>6. Juni 1998</td>
+                        <td>Die Entwicklung wird nicht mehr nur von einer Person vorangetrieben.
+                            <a href="https://de.wikipedia.org/wiki/Zeev_Suraski">Zeev Suraski</a> und
+                            <a href="https://de.wikipedia.org/wiki/Andi_Gutmans">Andi Gutmans</a> schrieben die
+                            Codebasis f&uuml;r diese Version vollst&auml;ndig neu.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="head">4.x</th>
+                        <td>22. Mai 2000</td>
+                        <td>Einfache objektorientierte Programmierung hinzugef&uuml;gt. Hinzuf&uuml;gen einer
+                            fortgeschrittenen
+                            zweistufigen Parser- bzw. Ausf&uuml;hrungsmaschine, Zend Engine genannt.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head">5.x</td>
+                        <td>13. Juli 2004</td>
+                        <td>Neuerungen: Reflections, API, MySQLi(MySQL verbessert, objektorientiert und auf aktuelle
+                            MySQL-Versionen zugeschnitten), SQLite integriert, SimpleXML (einfacher XML-Parser, Update
+                            und Insert von Kindelementen m&ouml;glich), DOM-Unterst&uuml;tzung.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="head">7.x</th>
+                        <td>3. Dezember 2015</td>
+                        <td>Neuerungen: Neue Scalar-Type-Hints und Return-Typen, kombinierte Vergleichsoperatoren.
+                            Unterst&uuml;tzung f&uuml;r 64-Bit. Alle veralteten Funktionen wurden entfernt.
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="php-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Link zu PHP-Tutorials</h2>
+                    <ul id="linkList">
+                        <li>PHP Tutorial – PHP lernen -<a href="https://www.php-einfach.de/php-tutorial/">
+                            PHP-Einfach</a></li>
+                        <li>PHP 5 Tutorial -<a href="https://www.w3schools.com/php/"> W3Schools</a></li>
+                        <li>PHP/Tutorials –<a href="https://wiki.selfhtml.org/wiki/PHP/Tutorials"> SELFHTML-Wiki</a>
+                        </li>
+                        <li>PHP Tutorial - <a href="https://www.tutorialspoint.com/php/">Tutorial-Point</a></li>
+                        <li><a href="https://www.phptpoint.com/php-tutorial/">PHP Tutorial For Beginners Step By Step
+                            With Examples</a></li>
+                        <li><a href="https://www.tutorialrepublic.com/php-tutorial/">PHP Tutorial - An Ultimate Guide
+                            for Beginners</a></li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>PHP Quiz</h2>
+                    <form id="quiz" method="POST" action="#">
+                        <div class="form-check">
+                            <label for="who"><strong>Wer ist der Erfinder von
+                                PHP?<span class="req">*</span></strong></label>
+                            <input type="text" class="form-control" id="who" name="who" required>
+                        </div>
+                        <div class="form-check">
+                            <fieldset>
+                                <legend>Die Syntax von PHP ist &auml;hnlich zu:</legend>
+                                <label for="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="c" id="defaultCheck1" name="syntax">C</label><br>
+                                <label for="defaultCheck2">
+                                    <input class="form-check-input" type="checkbox" value="perl" id="defaultCheck2" name="syntax">Perl</label><br>
+                                <label for="defaultCheck3">
+                                    <input class="form-check-input" type="checkbox" value="java" id="defaultCheck3" name="syntax">Java</label><br>
+                                <label for="defaultCheck4">
+                                    <input class="form-check-input" type="checkbox" value="js" id="defaultCheck4" name="syntax">JavaScript</label><br>
+                            </fieldset>
+                        </div>
+                        <div class="form-check">
+                            <fieldset>
+                                <legend>PHP ist die Abk&uuml;rzung f&uuml;r ..:<span class="req">*</span></legend>
+                                <label for="radio1">
+                                    <input class="form-check-input" type="radio" name="php-abbr" id="radio1" value="option1" required>
+                                    Hypertext Preprocessor</label> <br>
+                                <label for="radio2">
+                                    <input class="form-check-input" type="radio" name="php-abbr" id="radio2" value="option2">
+                                    Personal Hypertext Processor</label> <br> <label for="radio3">
+                                <input class="form-check-input" type="radio" name="php-abbr" id="radio3" value="option3">
+                                Private Home Page</label> <br>
+                            </fieldset>
+                        </div>
+                        <div class="form-check">
+                            <label for="inputState"><strong>Wie schreibt man "Hello World" in
+                                PHP?<span class="req">*</span></strong></label>
+                            <select id="inputState" class="form-control" required>
+                                <option value="">Bitte ausw&auml;hlen</option>
+                                <option value="document.write('Hello World!')">document.write("Hello World")</option>
+                                <option value="echo('Hello World!';)">echo "Hello World";</option>
+                                <option value="('Hello World!')">"Hello World";</option>
+                                <option value="System.our.println('Hello World!')">System.out.println("Hello World")
+                                    ;
+                                </option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Absenden
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright © PHP Info 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.slim.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- eigene Scripts bzw. jQuery 3.5.1 -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
