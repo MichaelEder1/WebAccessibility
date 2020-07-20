@@ -11,7 +11,11 @@
             <item index="3" class="java.lang.String" itemvalue="noscript" />
             <item index="4" class="java.lang.String" itemvalue="embed" />
             <item index="5" class="java.lang.String" itemvalue="script" />
+<<<<<<< HEAD
             <item index="6" class="java.lang.String" itemvalue="form" />
+=======
+            <item index="6" class="java.lang.String" itemvalue="longdesc" />
+>>>>>>> 8d3ec2bb341993aff6fdb73b0f521537bff54fcc
           </list>
         </value>
       </option>
